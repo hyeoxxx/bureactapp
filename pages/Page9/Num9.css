@@ -1,0 +1,38 @@
+*{
+    /* border: 1px solid black; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+.num9-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.num9-list {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.num9-item {
+  margin-bottom: 40px; /* 각 문제 간의 간격 */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 문제 내부 컴포넌트 간의 간격 */
+.num9-item > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.next-button {
+  background-color: grey;
+  cursor: not-allowed;
+}
+.next-button.active {
+  background-color: green;
+  cursor: pointer;
+}

@@ -1,0 +1,100 @@
+*{
+    /* border: 1px solid black; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.write-blank-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.word-table{
+    width: 1000px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.word-tr{
+    display: flex;
+}
+
+
+.word-td{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+.write-table{
+    width: 1000px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+}
+
+.write-tr{
+    display: flex;
+}
+
+
+.write-td{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    border: 0.5px solid #ccc
+}
+
+.write-td textarea {
+    border: none;
+    width: 200px;
+    height: 49px;
+    resize: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    line-height: 49px;
+    font-size: 14px; 
+    overflow: hidden; 
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.validate-button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* background-color: white; */
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #f9ffef;
+    margin: auto;
+}
+
+.blank-validation-message{ 
+    color: red;
+    margin: 10px;
+}

@@ -1,0 +1,106 @@
+h2.title {
+    display: flex;
+    background-color: #d0ff00;
+    width: fit-content;
+    margin: 30px;
+}
+
+p.title-description {
+    font-size: 20px;
+    margin: 30px;
+}
+
+.puzzle-page {
+    background-color: white;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.hints {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    background-color: #d0ff00;
+}
+
+.cube-hint {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    width: 500px;
+    margin-left: 30px;
+}
+
+.cube-hint-container {
+    border: 1px solid #000;
+    margin-bottom: 30px;
+    width: 90%;
+}
+
+
+.cube-hint-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cube-answer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.cube-answer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.cube-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cube-answer-hint {
+    display: flex;
+    border: 1px solid #000;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.table-cubes {
+    width: 90%;
+}
+
+.button-check-answer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #00b42a;
+    color: white;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-check-answer:hover {
+    background-color: #009624;
+}

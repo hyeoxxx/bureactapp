@@ -1,0 +1,306 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.top-text {
+    display: flex;
+    margin-left: 5%;
+    align-items: center;
+    gap: 5px;
+}
+
+.text-with-image {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    font-size: 13px;
+}
+
+.text-background {
+    background-color: #daffe2;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.text-with-image img {
+    width: 35px;
+    height: auto;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-wrapper2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.q1-button {
+    background-color: #00b42a;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.q1-button:hover {
+    background-color: #009624;
+}
+
+.memory-table {
+    text-align: center;
+    border-radius: 10px;
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px 5%;
+    table-layout: fixed;
+}
+
+.memory-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.memory-table input {
+    width: 90%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: center;
+}
+
+.text-with-image2 {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.text-with-image2 img {
+    width: 35px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.text-with-image3 {
+    display: flex;
+    margin: 20px 5%;
+    align-items: center;
+    gap: 1px;
+}
+
+.text-with-image4 {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.text-with-image4 img {
+    width: 35px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.info-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px 5%;
+    table-layout: fixed;
+}
+
+.info-table th {
+    background-color: #d2f7db;
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.info-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.info-table th:nth-child(1),
+.info-table td:nth-child(1) {
+    width: 20%;
+}
+
+.info-table td:nth-child(2) {
+    width: 50%;
+    text-align: left;
+}
+
+.info-table th:nth-child(3),
+.info-table td:nth-child(3) {
+    width: 20%;
+}
+
+.red {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff7171;
+}
+
+.orange {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff9100;
+}
+
+.green {
+    font-weight: bold;
+    font-size: 20px;
+    color: #00b42a;
+}
+
+.purple {
+    font-weight: bold;
+    font-size: 20px;
+    color: #9200e7;
+}
+
+.info-table td input {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.note-memo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 87.5%;
+    margin: 20px auto;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+.note-memo img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: -30%;
+}
+
+.note-memo strong {
+    color: #ff7171;
+    text-decoration: underline;
+}
+
+.quiz-result {
+    text-align: center;
+    font-size: 13px;
+}
+
+.input-table2 {
+    text-align: center;
+    border-radius: 10px;
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px 5%;
+    table-layout: fixed;
+}
+
+.input-table2 td {
+    border: 1px solid #ddd;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.input-table2 input {
+    width: 90%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: center;
+}
+
+.q2-button {
+    background-color: #00b42a;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.q2-button:hover {
+    background-color: #009624;
+}
+
+.feedback-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.feedback {
+    color: #ff7171;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.q3-button {
+    background-color: #00b42a;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.q3-button:hover {
+    background-color: #009624;
+}
+
+.exam-1 {
+    font-weight: bold;
+    color: #ff7171;
+}
+
+.Correct-answer {
+    font-weight: bold;
+    color: #0080FF;
+}

@@ -1,0 +1,144 @@
+.diary-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #aad4a7;
+  border-radius: 10px;
+  background-color: #f6fdf5;
+  font-family: 'Arial', sans-serif;
+}
+
+.diary-header {
+  text-align: center;
+  color: #5ca860;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.date-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #e7f6e7;
+  border: 1px solid #aad4a7;
+  border-radius: 10px;
+}
+
+.date-weather div {
+  font-size: 0.9rem;
+  color: #4f704d;
+  font-weight: bold;
+}
+
+.grid-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.grid-item {
+  display: flex;
+  border: 1px solid #aad4a7;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.grid-item label {
+  font-weight: bold;
+  color: #4f704d;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.grid-item input,
+.grid-item textarea {
+  flex-grow: 1;
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #aad4a7;
+  border-radius: 5px;
+  background-color: #fefefe;
+  font-size: 0.9rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.time-table {
+  margin-top: 20px;
+  border: 1px solid #aad4a7;
+  border-radius: 10px;
+}
+
+.time-table-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  background-color: #e7f6e7;
+  padding: 10px;
+  font-weight: bold;
+  color: #4f704d;
+  border-bottom: 1px solid #aad4a7;
+}
+
+.time-table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  padding: 10px;
+  border-bottom: 1px solid #aad4a7;
+  align-items: center;
+}
+
+.time-table-row:last-child {
+  border-bottom: none;
+}
+
+.time-table-row textarea {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #aad4a7;
+  border-radius: 5px;
+  resize: none;
+  background-color: #fefefe;
+}
+
+.time-table-row div {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #4f704d;
+}
+
+.save-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #5ca860;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.save-button:hover {
+  background-color: #4a8c50;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  color: #4f704d;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-text span {
+  font-weight: bold;
+}
