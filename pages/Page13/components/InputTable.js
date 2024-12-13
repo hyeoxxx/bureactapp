@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 const InputTable = () => {
   const [message, setMessage] = useState("");
   const [fruitInputs, setFruitInputs] = useState(["", "", "", "", ""]);
-  const [vegInputs, setVegInputs] = useState(["", "", "", "", ""]); 
+  const [vegInputs, setVegInputs] = useState(["", "", "", "", ""]);
 
-  const correctFruits = ["사과", "블루베리", "키위", "감", "포도"]; 
-  const correctVegetables = ["토마토", "브로콜리", "가지", "상추", "당근"]; 
+  const correctFruits = ["사과", "블루베리", "키위", "감", "포도"];
+  const correctVegetables = ["토마토", "브로콜리", "가지", "상추", "당근"];
+  const navigate = useNavigate();
 
   const checkAnswers = () => {
     const fruitCorrect = fruitInputs.every((input) =>
@@ -19,6 +20,7 @@ const InputTable = () => {
 
     if (fruitCorrect && vegetableCorrect) {
       setMessage("정답입니다! 🎉");
+      navigate("/pages/page12");
     } else if (!fruitCorrect && !vegetableCorrect) {
       setMessage("과일 종류가 틀렸습니다. 채소 종류가 틀렸습니다.");
     } else if (!fruitCorrect) {
