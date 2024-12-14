@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Clock */
 .clock-container {
     display: flex;
     justify-content: space-between;
@@ -64,7 +63,6 @@
     font-weight: bold;
 }
 
-/* Right-side */
 
 .hidden{display: none;}
 .right-side {
