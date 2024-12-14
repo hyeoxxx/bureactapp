@@ -7,21 +7,21 @@ const Clock = () => {
     const minInputRef = useRef(null);
 
 
-    const [period, setPeriod] = useState(""); // 오전/오후
-    const [hour, setHour] = useState(""); // 시
-    const [min, setMin] = useState(""); // 분
-    const [selectedNum, setSelectedNum] = useState(null); // 선택된 숫자
-    const [siOrBunBtn, setSiOrBunBtn] = useState(""); // 시침/분침
+    const [period, setPeriod] = useState(""); 
+    const [hour, setHour] = useState(""); 
+    const [min, setMin] = useState(""); 
+    const [selectedNum, setSelectedNum] = useState(null); 
+    const [siOrBunBtn, setSiOrBunBtn] = useState("");
     const [validationMessage, setValidationMessage] = useState("");
     const [isHidden,setIsHidden] = useState(true);
     const [selectedHour, setSelectedHour] = useState(null);
     const [selectedMin, setSelectedMin] = useState(null);
-    // 오전/오후 변경
+    
     const handlePeriodChange = (newPeriod) => { 
         setPeriod(newPeriod);
     };
 
-    // 시간 입력
+    
     const handleHourChange = (e) => {
         const value = e.target.value;
         if (value === "" || (Number(value) >= 1 && Number(value) <= 12)) {
@@ -29,7 +29,7 @@ const Clock = () => {
         }
     };
 
-    // 분 입력
+    
     const handleMinChange = (e) => {
         const value = e.target.value;
         if (value === "" || (Number(value) >= 0 && Number(value) <= 59)) {
@@ -37,7 +37,7 @@ const Clock = () => {
         }
     };
 
-    // 입력된 시간과 현재 시간 비교
+    
     const checkTime = () => {
         const today = new Date();
         let currentHour = today.getHours();
@@ -54,11 +54,11 @@ const Clock = () => {
         const hourInput = hourInputRef.current;
         const minInput = minInputRef.current;
 
-        // 기존 클래스 제거
+        
         hourInput.classList.remove("green", "red");
         minInput.classList.remove("green", "red");
 
-        // 조건에 따라 클래스 추가
+        
         if (Number(hour) === currentHour) {
             hourInput.classList.add("green");
         } else {
@@ -72,7 +72,7 @@ const Clock = () => {
         }
 
 
-        // 메시지 설정
+        
         if (
             hourInput.classList.contains("green") &&
             minInput.classList.contains("green")&&
@@ -96,17 +96,17 @@ const Clock = () => {
 
 
 
-    // 시침 버튼 클릭
+    
     const handleHourButtonClick = () => {
         setSiOrBunBtn("hour");
     };
 
-    // 분침 버튼 클릭
+    
     const handleMinButtonClick = () => {
         setSiOrBunBtn("min");
     };
 
-    // 시계 숫자 버튼 클릭
+    
     const handleCircleClick = (num) => {
         setSelectedNum(num);
 
@@ -207,13 +207,13 @@ const Clock = () => {
                 <div className="circle">
                     {Array.from({ length: 60 }, (_, i) => {
                         const adjustedValue = i ;
-                        if ( i === 0 ? 60 : i); // 12시 방향의 value를 60으로 설정
+                        if ( i === 0 ? 60 : i); 
                         const displayValue =
                             adjustedValue % 5 === 0
                                 ? adjustedValue / 5 === 12
                                     ? 12
                                     : adjustedValue / 5
-                                : "."; // 점 표시
+                                : "."; 
 
                         return (
                             <button
@@ -224,8 +224,8 @@ const Clock = () => {
                                 style={{
                                     transform: `rotate(${i * 6}deg) translate(0px, -115px)`,
                                 }}
-                                value={adjustedValue} // 버튼의 value 설정
-                                onClick={() => handleCircleClick(adjustedValue)} // 클릭 이벤트
+                                value={adjustedValue}
+                                onClick={() => handleCircleClick(adjustedValue)} 
                             >
                                 {displayValue}
                             </button>
