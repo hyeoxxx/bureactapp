@@ -1,5 +1,5 @@
 *{
-    /* border: 1px solid black; */
+
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -16,14 +16,14 @@
 }
 
 .num9-item {
-  margin-bottom: 40px; /* 각 문제 간의 간격 */
+  margin-bottom: 40px; 
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* 문제 내부 컴포넌트 간의 간격 */
+
 .num9-item > *:not(:last-child) {
   margin-bottom: 20px;
 }
