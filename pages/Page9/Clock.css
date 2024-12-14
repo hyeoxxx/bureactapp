@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* 줄어들 때 줄바꿈 */
+    flex-wrap: wrap; 
     width: 100%;
     height: auto;
     padding: 10px;
@@ -22,8 +22,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px auto; /* 중앙 정렬 */
-    flex-shrink: 0; /* 크기 줄지 않도록 */
+    margin: 10px auto; 
+    flex-shrink: 0;
 }
 
 .circle {
@@ -69,7 +69,7 @@
 .hidden{display: none;}
 .right-side {
     width: 450px;
-    max-width: 100%; /* 화면 크기에 따라 줄어듦 */
+    max-width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -83,7 +83,7 @@
     height: auto;
     border: 1.5px solid black;
     display: flex;
-    flex-wrap: wrap; /* 줄바꿈 가능 */
+    flex-wrap: wrap; 
     padding: 5px;
     justify-content: center;
 }
@@ -114,7 +114,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* 버튼이 화면 크기에 맞게 줄바꿈 */
+    flex-wrap: wrap;
     margin: 10px 0;
 }
 
@@ -165,7 +165,7 @@
     border-radius: 8px;
 }
 
-/* 반응형 디자인 */
+
 @media screen and (max-width: 768px) {
     .left-side {
         width: 200px;
