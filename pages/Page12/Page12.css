@@ -74,12 +74,10 @@
 .page13-hint-title h3 {
     margin-top: 0px;
     margin-bottom: 0;
-    /* h3의 아래쪽 마진 제거 */
 }
 
 .page13-hint-title p {
     margin-top: 0;
-    /* p의 위쪽 마진 제거 */
 }
 
 .page13-hint-list {
