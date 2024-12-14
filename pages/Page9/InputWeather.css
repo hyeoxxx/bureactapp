@@ -1,5 +1,5 @@
 *{
-    /* border: 1px solid black; */
+
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -16,7 +16,7 @@
     justify-items: center;
     align-items: center;
     justify-content: center;
-    /* width: 800px; */
+
 }
 
 .input-weather-container2 input{
@@ -33,7 +33,7 @@
     justify-items: center;
     align-items: center;
     justify-content: center;
-    /* width: 800px; */
+
 }
 
 .weather-btn-area{
