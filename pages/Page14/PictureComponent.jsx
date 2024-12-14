@@ -14,7 +14,6 @@ const PictureComponent = forwardRef((props, ref) => {
         setSelectedButton(btnType);
     };
 
-    // 외부에서 정답 여부 확인 메서드 제공
     useImperativeHandle(ref, () => ({
         isCorrect: () => correctBtnMap[props.className] === selectedButton,
     }));
