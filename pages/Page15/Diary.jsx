@@ -30,14 +30,14 @@ const Diary = () => {
     <div className="diary-container">
       <h2 className="diary-header">일기</h2>
 
-      {/* 상단 날짜 및 날씨 */}
+
       <div className="date-weather">
         <div>2024년 12월 3일 (화)</div>
         <div>☀️ 맑음</div>
       </div>
 
       <form onSubmit={handleSubmit}>
-        {/* 상단 주요 정보 */}
+        
         <div className="grid-table">
           <div className="grid-item">
             <label htmlFor="visitPlace">방문한 장소</label>
@@ -81,7 +81,7 @@ const Diary = () => {
           </div>
         </div>
 
-        {/* 시간별 주요 활동 */}
+        
         <div className="time-table">
           <div className="time-table-header">
             <div>시각</div>
@@ -126,7 +126,7 @@ const Diary = () => {
           </div>
         </div>
 
-        {/* 내일 계획 */}
+        
         <div className="grid-item">
           <label htmlFor="tomorrowPlan">내일 계획</label>
           <textarea
