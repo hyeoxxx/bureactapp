@@ -41,7 +41,7 @@ const UnderTable = () => {
             {[...Array(5)].map((_, colIndex) => (
               <td key={colIndex}>
                 {colIndex === 0 ? (
-                  <span className="Correct-answer">{correctFruits[0]}</span> // 첫 번째 칸에 정답 "사과" 표시
+                  <span className="Correct-answer">{correctFruits[0]}</span> 
                 ) : (
                   <input
                     type="text"
