@@ -8,7 +8,7 @@ const InputWeather = () => {
     const [day, setDay] = useState("");
     const [validationMessage, setValidationMessage] = useState("");
 
-    const [weather, setWeather] = useState(""); // 현재 선택된 날씨
+    const [weather, setWeather] = useState("");
 
     const handleValidateToday = () => {
 
